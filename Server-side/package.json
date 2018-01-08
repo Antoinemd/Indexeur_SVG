@@ -1,0 +1,26 @@
+{
+  "name": "server-side",
+  "version": "1.0.0",
+  "description": "Partie serveur de l'indexeur SVG qui est en charge d'interroger une database contenant des fichiers svg et de retourner au client le résultat de sa requête",
+  "main": "appJS/index.js",
+  "scripts": {
+    "start": "node ./appJS/index.js",
+    "compile": "node ./node_modules/typescript/bin/tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "svg",
+    "mongo",
+    "mongodb",
+    "express"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^4.13.9"
+  },
+  "devDependencies": {
+    "typescript": "^2.6.2"
+  }
+}
