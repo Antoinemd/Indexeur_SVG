@@ -1,15 +1,14 @@
  
-// import { createServer, Server } from "http";
+// import de configuration du serveur
 import * as express from "express";
 import * as bodyParser from "body-parser";      // Parse HTTP GET and POST variables
 import * as path from "path";                   // Deal with system paths
 import * as http from "http";                   // HTTP server
 import { createServer, Server } from "http";
 
-
-// Router RestApi()
+// import du projet
 import { getImagesRestApi } from "./app-router";
-
+import { connectBdd } from "./mongoConnect";
 
 export class App {
     public static readonly PORT: number = 8000;
@@ -24,7 +23,7 @@ export class App {
         this.config();
         this.createServer();
         this.listen();
-
+        connectBdd();
     }
 
     private createApp(): void { this.app = express(); }
@@ -42,10 +41,6 @@ export class App {
         this.app.use("/data", express.static(path.join(__dirname, "../data")));
         // Pour l'utilisation des routeurs 
         this.app.use("/apiImage", getImagesRestApi());
-        // TODO: faire la connection à la BDD Mongo
-        // connection à la bdd cabinet-meidcal de mongoDB
-        // connectBdd();
-        
     }
     
     private listen(): void { 

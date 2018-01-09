@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="210mm" height="297mm" viewBox="0 0 210 297" version="1.1" id="svg3874" inkscape:version="0.92.2 (5c3e80d, 2017-08-06)" sodipodi:docname="Modele 2.svg">
+  <defs id="defs3868"/>
+  <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="400" inkscape:cy="560" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" showguides="false" inkscape:window-width="1920" inkscape:window-height="1001" inkscape:window-x="-9" inkscape:window-y="-9" inkscape:window-maximized="1"/>
+  <metadata id="metadata3871">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:title/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1">
+    <ellipse style="fill:#0000ff;stroke-width:0.26458332" id="path3876" cx="46.869045" cy="68.324409" rx="33.261906" ry="23.056549"/>
+    <ellipse style="fill:#c83737;stroke-width:0.26458332" id="path3878" cx="116.41666" cy="169.24405" rx="27.970238" ry="56.69643"/>
+    <rect style="fill:#c83737;stroke-width:0.26458332" id="rect3880" width="91.470238" height="67.279762" x="98.273804" y="11.25"/>
+    <rect style="fill:#008000;stroke-width:0.26458332" id="rect3882" width="46.869045" height="51.404762" x="19.654762" y="163.95238"/>
+    <rect style="fill:#008000;stroke-width:0.26458332" id="rect3884" width="57.452377" height="40.065475" x="127" y="231.23213"/>
+  </g>
+</svg>
