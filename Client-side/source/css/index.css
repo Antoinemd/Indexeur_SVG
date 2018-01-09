@@ -1,0 +1,31 @@
+h1 {
+    background-color: #c3d6f4;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #9fafc9;
+    text-align: center;
+}
+
+body {
+    background-color: #e0ebfc;
+    color: #162947;
+}
+
+label {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+input {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+select {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+label.frm {
+    margin-right: 40px;
+}
