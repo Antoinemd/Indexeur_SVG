@@ -12,18 +12,27 @@ function getImagesRestApi() {
     console.log('Router : [ OK ]');
     /** /getImage */
     router.get("/getImage", (req, res) => {
+        // récupération des requêtes req.body.Nom_Param_Donné_Par_EVA
+        // params['query'] = req.body;
+        // params['queries'] = q.queries_name;
+        // routine à exécuter au lancement du server ( TODO: à déplacer )
+        // on ne placera dans ce router, que les requetes qui iront interroger la bdd avec les 
+        // attributs contenus dans la variable req.body
         const imageFolder = './data/';
+        const file = 'polyline.svg';
         const fs = require('fs');
         let jsonFile;
-        // voir http://johannburkard.de/software/xsltjs/
-        fs.readdir(imageFolder, (err, files) => {
-            files.forEach(file => {
-                console.log('filename: ', imageFolder + file);
-                // on applique pour chaque fichier ..
-                jsonFile = parseXml2Json_1.parseXmlToJson(imageFolder + file);
-            });
-            // à la fin de l'analyse du répertoire ..
-        });
+        // ------
+        // A décommenter pour appliquer la méthode à l'enssemble du repertoire
+        // fs.readdir(imageFolder, (err, files) => {
+        //     files.forEach(file => {
+        console.log('filename: ', imageFolder + file);
+        // on applique pour chaque fichier ..
+        jsonFile = parseXml2Json_1.parseXmlToJson(imageFolder + file);
+        // });
+        // TODO: à la fin de l'analyse du répertoire ..            
+        // });
+        // --------------
         // envoit le dernier fichier
         res.json({ 'file': jsonFile });
         // res.json( {message: "Il va falloir implémenter tout ça... "+" Bon chance"} );

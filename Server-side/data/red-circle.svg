@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<svg height="600" width="600" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="30%" cy="30%" r="30%" fill="#FF0000" />
+  
+</svg>
+
+<?xml version="1.0"?>
+<svg height="600" width="600" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="30%" cy="30%" r="30%" fill="#DDA0DD" />
+  
+  <rect
+       id="rect3699"
+       width="83.388092"
+       height="48.643055"
+       x="39.021351"
+       y="39.886711"
+       fill="#ff0000" />
+</svg>
