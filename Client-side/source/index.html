@@ -18,7 +18,8 @@
 
         <h2>A la recherche de votre image :</h2>
         <form method="post" action="ton_action">
-            <p>
+            <p> 
+                <!-- Choix de la forme -->
                 <label for="shape">Forme particulière à recherher ?</label><br />
                 <select name="shape" id="lookingShape">
                 <option value="none">Aucune</option>
@@ -33,6 +34,7 @@
 
             <p>
                 <td>
+                    <!-- Choix de la couleur -->
                     <label for="color"> Couleur (hexadécimal) rechercher ?</label>
                 </td>
                 <td>
@@ -40,22 +42,13 @@
                     <input class="color" id="color" name="form_color" placeholder="000000" type="text" value="">
                 </td>
                 </tr>
-                <!--  <label for="shape">Couleur recherher ?</label>
-                <br />
-                <select name="shape" id="lookingShape">
-                <option value="">Rectangle</option>
-                <option value="">Rond</option>
-                <option value="">Ellipse</option>
-                <option value="">une ligne</option>
-                <option value="">Une ligne brisée</option>
-                <option value="">Un polygone</option>
-            </select>
-        -->
+               
             </p>
 
             <input type="submit" id="launchButton" value="Rechercher">
         </form>
     <br />
+    <!-- Div ou s'afficheront les images récuperer de la BD -->
         <div id="placeImage">
             <button  onclick="testImage()" value="Test Image">Image(s) correspondante(s) trouvée(s)</button>
         
