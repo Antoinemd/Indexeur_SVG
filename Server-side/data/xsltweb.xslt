@@ -13,13 +13,11 @@ xmlns:sv="http://www.w3.org/2000/svg" exclude-result-prefixes="sv">
 
 <xsl:template match="/">
 	{
-	"image" : {
         "_nom_image" : "",
 		"formes" : 
 		[
 		<xsl:apply-templates select="sv:svg"/>
-		]
-	}	
+		]	
 	}
 </xsl:template>
 

@@ -19,7 +19,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^8.5.7",
+    "@types/node": "^8.5.8",
     "express": "^4.16.2",
     "libxmljs": "^0.18.7",
     "mongoose": "^4.13.9",

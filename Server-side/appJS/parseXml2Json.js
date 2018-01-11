@@ -7,6 +7,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const fs = require('fs'); // import pour la lecture des fichiers
 const xsltFile = 'image-svg.xslt'; // on code en dur le path dde la feuille XSLT
 const parseString = require('xml2js').parseString;
+/** Fonction supposée retourner l'objet JSON, lui même résultat de l'application
+ *  de la feuille de style XSLT sur le fichier SVG
+ *
+ * @param filepath path du répoertore contenant les images
+ */
 function parseXmlToJson(filepath) {
     // source: https://stackoverflow.com/questions/27494825/converting-xml-to-html-in-nodejs-using-libxsltthrows-has-no-method-apply-erro
     // https://www.w3schools.com/xml/xsl_server.asp .. tout simplement ..
@@ -38,12 +43,9 @@ function parseXmlToJson(filepath) {
                 let xmlStringified = JSON.stringify(data);
                 // replaceString("World", "Web", xmlStringified);
                 console.log('modification chaine: >>>>> ', xmlStringified.substring(0, 46));
-                -stylesheet;
-                type = "text/xsl";
-                href = "yourxsl.xsl" ?  >
-                    // let formated = (xmlStringified.substring(0,40));
-                    // XmlString=XmlString.replaceAll("\\<\\?xml(.+?)\\?\\>", "").trim();
-                    console.log('FORMATED : >>>>>>> ', xmlStringified) : ;
+                // <?xml-stylesheet type="text/xsl" href="./image-svg.xslt"?>
+                // ----> appeler un script python pour appliquer la feuille xslt ?
+                console.log('FORMATED : >>>>>>> ', xmlStringified);
             });
             // let doc; 
             // let node;

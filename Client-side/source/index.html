@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="css\index.css" media="all" />
     <script type="text/javascript" src="js\index.js"></script>
-
+    <script src="jquery-3.2.1.min.js"></script>
 </head>
 
 <body>
@@ -17,18 +17,18 @@
 
 
         <h2>A la recherche de votre image :</h2>
-        <form method="post" action="ton_action">
+        <form method="post" action="/apiImage/..">
             <p>
                 <label for="shape">Forme particulière à recherher ?</label><br />
                 <select name="shape" id="lookingShape">
-                <option value="none">Aucune</option>
-                <option value="rect">Rectangle</option>
-                <option value="circle">Rond</option>
-                <option value="ellipse">Ellipse</option>
-                <option value="line">Ligne</option>
-                <option value="polyline">Ligne brisée</option>
-                <option value="polygone">Polygone</option>
-            </select>
+                    <option value="none">Aucune</option>
+                    <option value="rect">Rectangle</option>
+                    <option value="circle">Rond</option>
+                    <option value="ellipse">Ellipse</option>
+                    <option value="line">Ligne</option>
+                    <option value="polyline">Ligne brisée</option>
+                    <option value="polygon">Polygone</option>
+                </select>
             </p>
 
             <p>
@@ -56,8 +56,8 @@
             <input type="submit" id="launchButton" value="Rechercher">
         </form>
     <br />
+    <button  onclick="testImage()" value="Test Image">Image(s) correspondante(s) trouvée(s)</button>
         <div id="placeImage">
-            <button  onclick="testImage()" value="Test Image">Image(s) correspondante(s) trouvée(s)</button>
         
 
         </div>

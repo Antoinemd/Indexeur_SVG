@@ -1,4 +1,4 @@
-import { Schema, model } from "mongoose";
+// import { Schema, model } from 'mongoose';
 
 // Retrieve
 let mongoose = require("mongoose");
@@ -10,34 +10,34 @@ let mongoose = require("mongoose");
 //avec discriminator)
 
 export const formesSchema = new mongoose.Schema({
-    genre             :   { type : String, 
-                            enum:['circle','line','rect','ellipse','polyline','polygon']},
+    genre             :   { type : String, enum:['circle','line','rect','ellipse','polyline','polygon']},
     couleur           :     String
 });
 
+
 //Mongoose créé la collection images si elle n'existe pas
 export const imageSchema = new mongoose.Schema({
-    _nom_image       : { type : String, required : true },
+    nom_image       : { type : String, required : true },
     formes            : [formesSchema]
 });
 
 //En principe Mongoose recréé une collection "images" si elle n'existe pas déjà
-export const imageModel = mongoose.model("images", imageSchema);
+export const modelImage = mongoose.model("images", imageSchema);
 
 
 
-//Version nestée, à corriger côté forme pour faire tableau d'objets
-export const imageSchemaNested = new Schema({
-      _nom_image       : { type : String, required : true },
-      formes            : {
-                            genre             :   { type : String, 
-                                                    enum:['circle','line','rect','ellipse','polyline','polygon']},
-                            couleur :   String
-                          }
-});
+// //Version Non nestée, à corriger côté forme pour faire tableau d'objets
+// export const imageSchemaNested = new Schema({
+//       _nom_image       : { type : String, required : true },
+//       formes            : {
+//                             genre             :   { type : String, 
+//                                                     enum:['circle','line','rect','ellipse','polyline','polygon']},
+//                             couleur :   String
+//                           }
+// });
 
 
-export const modelImage = model("imagen", imageSchemaNested);
+// export const modelImage = model("image", imageSchemaNested);
 
 
 //Version JSON schema vu en cours
@@ -49,24 +49,26 @@ export const modelImage = model("imagen", imageSchemaNested);
     "type" : "object",
     "properties" :
     {*/
-export const schemaImage = {
-                        images : {
-                          type : "string",
-                          description : "Une image",
-                          properties : {
-                                  _nom_image : {type : "string",
-                                                description: "Le nom de l'image qui va l'identifier"},
-                                  formes :     {type : "array",
-                                                description: "Une image contient des formes dans un tableau avec deux attributs",
-                                                properties : {
-                                                      genre   : {type : "string", enum : ['circle','line','rect','ellipse','polyline','polygon']},
-                                                      couleur : {type : "string"}
-                                                }
-                                                }
-                                        }
-                                }
-                            };
 
 
-export const imagesModel = model("images", schemaImage);
+// export const schemaImage = {
+//                         images : {
+//                           type : "string",
+//                           description : "Une image",
+//                           properties : {
+//                                   _nom_image : {type : "string",
+//                                                 description: "Le nom de l'image qui va l'identifier"},
+//                                   formes :     {type : "array",
+//                                                 description: "Une image contient des formes dans un tableau avec deux attributs",
+//                                                 properties : {
+//                                                       genre   : {type : "string", enum : ['circle','line','rect','ellipse','polyline','polygon']},
+//                                                       couleur : {type : "string"}
+//                                                 }
+//                                                 }
+//                                         }
+//                                 }
+//                             };
+
+
+// export const imagesModel = model("images", schemaImage);
 

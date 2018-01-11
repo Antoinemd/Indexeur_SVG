@@ -8,7 +8,7 @@ const xsltFile = 'image-svg.xslt';   // on code en dur le path dde la feuille XS
 const parseString = require('xml2js').parseString;
 
 
-/**Fonction supposée retourner l'objet JSON, lui même résultat de l'application
+/** Fonction supposée retourner l'objet JSON, lui même résultat de l'application
  *  de la feuille de style XSLT sur le fichier SVG
  * 
  * @param filepath path du répoertore contenant les images

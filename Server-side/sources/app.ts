@@ -1,7 +1,7 @@
  
 // import de configuration du serveur
 import * as express from "express";
-import * as bodyParser from "body-parser";      // Parse HTTP GET and POST variables
+import * as bodyParser from 'body-parser';      // Parse HTTP GET and POST variables
 import * as path from "path";                   // Deal with system paths
 import * as http from "http";                   // HTTP server
 import { createServer, Server } from "http";
