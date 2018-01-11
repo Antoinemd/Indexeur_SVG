@@ -14,11 +14,11 @@
    height="297mm"
    viewBox="0 0 210 297"
    version="1.1"
-   id="svg3874"
+   id="svg8"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
-   sodipodi:docname="Modele 2.svg">
+   sodipodi:docname="Modele1.svg">
   <defs
-     id="defs3868" />
+     id="defs2" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -28,18 +28,17 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
      inkscape:cx="400"
-     inkscape:cy="560"
+     inkscape:cy="445.71429"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     showguides="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1001"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
-     inkscape:window-maximized="1" />
+     inkscape:window-width="942"
+     inkscape:window-height="983"
+     inkscape:window-x="960"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
   <metadata
-     id="metadata3871">
+     id="metadata5">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -54,29 +53,45 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <ellipse
-	   fill="#0000ff"
-       style="stroke-width:0.26458332"
-       id="path3876"
-       cx="46.869045"
-       cy="68.324409"
-       rx="33.261906"
-       ry="23.056549" />
-    <ellipse
-	   fill="#c83737"
-       style="stroke-width:0.26458332"
-       id="path3878"
-       cx="116.41666"
-       cy="169.24405"
-       rx="27.970238"
-       ry="56.69643" />
     <rect
-	   fill="#c83737"
+	   fill="#008000"
        style="stroke-width:0.26458332"
-       id="rect3880"
-       width="91.470238"
-       height="67.279762"
-       x="98.273804"
-       y="11.25" />
+       id="rect3699"
+       width="80.130951"
+       height="73.327377"
+       x="45.357143"
+       y="21.833332" />
+    <rect
+	   fill="#ffff00"
+       style="stroke-width:0.26458332"
+       id="rect3705"
+       width="83.154762"
+       height="77.10714"
+       x="4.5357141"
+       y="127.66666" />
+    <rect
+	   fill="#d35f5f"
+       style="stroke-width:0.26458332"
+       id="rect3707"
+       width="75.595245"
+       height="62.744049"
+       x="128.5119"
+       y="185.875" />
+    <ellipse
+	   fill="#916f6f"
+       style="stroke-width:0.26458332"
+       id="path3709"
+       cx="169.33333"
+       cy="131.44643"
+       rx="24.190477"
+       ry="22.678572" />
+    <ellipse
+	   fill="#ff2a2a"
+       style="stroke-width:0.26458332"
+       id="path3711"
+       cx="38.55357"
+       cy="255.8006"
+       rx="5.2916665"
+       ry="32.127975" />
   </g>
 </svg>
