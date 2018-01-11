@@ -26,11 +26,17 @@ function returnValue() {
     }
 
     var colorValue = document.getElementById("color").value;
-    if(colorValue == "")
-        alert("Pas de couleur choisie");
-    else
-        alert(colorValue);
+    // if(colorValue == "") {
 
+    //     // alert("Pas de couleur choisie");
+    // } else {
+    //     // alert(colorValue);
+    // }
+
+    // ici requete ajax qui va faire la requete sur le serveur
+
+
+    
 
 //Récueperer le path de l'image contenant les infos rechercher et , changer la 
 //valeur dasn href !! 
